@@ -1,0 +1,83 @@
+.header {
+    background-color: #003580; /* Màu nền xanh dương */
+    padding: 30px 256px;
+    color: white;
+  
+    .nav {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 50px;
+  
+      .nav-list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        
+        .nav-item {
+          margin-right: 20px;
+  
+          a {
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 2px solid transparent;
+            text-decoration: none;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+  
+            i {
+              margin-right: 10px;
+              font-size: 16px; /* Kích thước icon */
+            }
+  
+            &:hover {
+              border-color: white;
+              background-color: rgba(255, 255, 255, 0.1);
+            }
+
+          }
+        }
+      }
+    }
+  
+    .header-content {
+      text-align:left;
+
+  
+      .header-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+  
+      .header-subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+  
+      .btn-signin {
+        display: inline-block;
+        background-color: #0061c1;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        margin-bottom: 60px;
+  
+        &:hover {
+          background-color: #004a9f;
+        }
+        &:focus{
+          box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+        }
+        &:active{
+          background-color: #0061c1;
+        }
+      }
+    }
+  }
+  

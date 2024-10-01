@@ -5,7 +5,7 @@
 }
 
 .navbar {
-    background-color: #3498db;
+    background-color: #003580;
 }
 .navContainer {
     height: 50px;
@@ -22,9 +22,8 @@
     font-size: 20px;
     user-select: none; //ko cho người dùng chọn văn bản
 }
-.logo:hover,
-.logo:focus {
-  color: #2c5777;
+.logo:hover {
+  color: #3498db;
 }
 
 .navButton {
@@ -53,5 +52,5 @@
 .navButton:active {
   background-color: #a0c7e4;
   box-shadow: none;
-  color: #2c5777;
+  color: white;
 }
