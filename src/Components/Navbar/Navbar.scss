@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.navbar {
+    background-color: #3498db;
+}
+.navContainer {
+    height: 50px;
+    max-width: 1024px;
+    padding: 0 256px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none; //ko cho người dùng chọn văn bản
+}
+.logo:hover,
+.logo:focus {
+  color: #2c5777;
+}
+
+.navButton {
+    border: none;
+    margin-left: 10px;
+    padding: 5px .8em;
+    cursor: pointer;
+  border-radius: 3px;
+  box-shadow: rgba(210, 208, 208, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.15385;
+  user-select: none;
+}
+
+.navButton:hover,
+.navButton:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.navButton:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.navButton:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
