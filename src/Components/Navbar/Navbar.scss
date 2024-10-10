@@ -1,0 +1,42 @@
+.navbar {
+    background-color: #5352ed;
+    height: 50px;
+    
+    .navbar__container{
+        max-width: 1024px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 256px;
+        line-height: 50px;
+        .navbar__logo{
+          color: white;
+          cursor: pointer;
+          user-select: none;
+          &:hover{
+            color:rgba(164, 176, 190, 1);
+
+          }
+          &:active{
+            color:white;
+        }
+        }
+        .navbar__item{
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            .navbar__btn{
+                user-select: none;
+                padding: 5px;
+                cursor: pointer;
+                border: none;
+                border-radius: 2px;
+                &:hover{
+                    background-color:rgba(164, 176, 190, 1);
+                }
+                &:active{
+                    color:white;
+                }
+            }
+            }
+    }
+}
