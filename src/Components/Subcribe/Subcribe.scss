@@ -1,0 +1,39 @@
+.sub{
+    background-color: #5352ed;
+    width: 100%;
+    .sub__container{
+        margin: 60px;
+        text-align: center;
+        color: white;
+        
+        .sub__desc{
+            margin-top: 20px;
+        }
+        .sub__form{
+            margin-top: 20px;
+            .sub__input{
+                padding: 15px 10px;
+                width: 300px;
+                outline: none;
+                border-radius: 5px;
+                border: none;
+                color: rgba(116, 125, 140,1.0);
+
+            }
+            .sub__btn{
+                padding: 15px 8px;
+                margin-left: 10px;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                background-color: rgba(112, 161, 255,1.0);
+                cursor: pointer;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    background-color: rgba(112, 161, 255,0.5);
+                }
+            }
+        }
+    }
+}

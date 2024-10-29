@@ -1,13 +1,16 @@
 .navbar {
     background-color: #5352ed;
-    height: 50px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .navbar__container{
-        max-width: 1024px;
         display: flex;
         justify-content: space-between;
-        margin: 0 256px;
-        line-height: 50px;
+        height: 60px;
+        max-width: 1024px;
+        width: 100%;
+        align-items: center;
         .navbar__logo{
           color: white;
           cursor: pointer;
@@ -25,6 +28,7 @@
             gap: 16px;
             align-items: center;
             .navbar__btn{
+                font-weight: 500;
                 user-select: none;
                 padding: 5px;
                 cursor: pointer;

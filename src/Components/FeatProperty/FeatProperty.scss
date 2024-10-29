@@ -1,0 +1,38 @@
+.featPro__container{
+    display: flex;
+    width: 1024px;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 80px;
+
+    .featPro__items{
+        overflow: hidden;
+        // height: 250px;
+        .featPro__img{
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+        .featPro__title{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .featPro__city{
+                color: rgba(189, 195, 199,1.0);
+                font-size: 14px;
+            }
+            .featPro_evaluate>span{
+                font-size: 14px;
+                margin-left:10px;
+            }
+            .featPro_evaluate>button{
+                background-color: #5352ed;
+                color: white;
+                border: none;
+                padding: 2px;
+            }
+            
+        }
+    }
+}

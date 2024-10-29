@@ -1,0 +1,152 @@
+.header {
+    background-color: #5352ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header__container{
+        position: relative;
+        max-width: 1024px;
+        width: 100%;
+        padding: 30px 0 90px;
+
+
+        // navigation
+        .nav__list{
+            display: flex;
+            gap: 30px;
+            
+            .nav__item{
+                color: white;
+                display: flex;
+                gap: 10px;
+                border: 2px solid transparent ;
+                border-radius: 20px;
+                padding: 10px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: border 0.5s ease;
+
+                &:hover{
+                    border: 2px solid white;
+                }
+            }
+        }
+
+        // content
+        .header__content{
+            margin-top:  50px; 
+            color: white;
+            
+            .header__desc{
+                margin-top: 16px;
+            }
+            .header__btn{
+                margin-top: 14px;
+                padding: 10px;
+                background-color: rgba(112, 161, 255,0.5);
+                border: none;
+                border-radius: 2px;
+                color: white;
+                transition: background-color 0.5s ease;
+                
+                &:hover{
+                    background-color: #70a1ff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        // search
+        .header__search{
+            background-color: white;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-sizing: border-box;
+            border: 3px solid rgba(241, 196, 15,1);
+            border-radius: 3px;
+            position: absolute;
+            bottom: -25px;
+            
+            .search__items{
+                display: flex;
+                gap: 8px;
+                justify-content: center;
+                align-items: center;
+                color: rgba(189, 195, 199,1.0);
+                cursor: pointer;
+                position: relative;
+// date
+                .date__range{
+                    position: absolute;
+                    top: 40px;
+                    z-index: 1;
+                }
+// options
+                .options{
+                    position: absolute;
+                    top:40px;
+                    background-color: rgba(241, 242, 246,1.0);
+                    z-index: 1;
+                    padding: 10px;
+                    font-size: 14px;
+                    color: black;
+                    width: 200px;
+                    .options__item{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 5px;
+                        
+                        .options__counter{
+                            display: flex;
+                            justify-content: space-between;
+                            max-width: 100px ;
+                            width: 100%;
+                            align-items: center;
+                            .counter__btn{
+                                padding: 6px 10px;
+                                border: 1px solid  rgba(30, 144, 255,1.0);
+                                cursor: pointer;
+                                transition: all 0.5s ease;
+                                &:hover{
+                                    background-color: rgba(30, 144, 255,1.0);
+                                    color: white;
+                                }
+                                &:active{
+                                    background-color:rgba(30, 144, 255,0.5) ;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .search__items--input{
+                    border: none;
+                    outline: none;
+                    font-size: 12px;
+                }
+                .search__items--text{
+                    font-size: 12px;
+                    width: 200px;
+                }
+                .search__btn{
+                    border-radius: 3px;
+                    color: white;
+                    padding: 10px;
+                    border: none;
+                    background-color: #5352ed;
+                    transition: background-color 0.5s ease;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(112, 161, 255,1.0);
+                    }
+                }
+            }
+        }
+    }
+}
